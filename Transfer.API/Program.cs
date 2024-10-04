@@ -1,11 +1,27 @@
+using Application.Interfaces;
+using Application.Mappers;
+using Application.Mappers.IMappers;
+using Application.UseCases;
+using Microsoft.EntityFrameworkCore;
+using Infrastructure.Command;
+using Infrastructure.Persistence;
+using Infrastructure.Query;
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+var connectionString = builder.Configuration["ConnectionString"];
+builder.Services.AddDbContext<TransferContext>(option => option.UseSqlServer(connectionString));
+
+
+builder.Services.AddScoped<ITransferServices, TransferServices>();
+builder.Services.AddScoped<ITransferQuery, TransferQuery>();
+builder.Services.AddScoped<ITransferCommand, TransferCommand>();
+builder.Services.AddScoped<ITransferMapper, TransferMapper>();
+
+
 
 var app = builder.Build();
 

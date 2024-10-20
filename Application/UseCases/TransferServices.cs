@@ -1,8 +1,11 @@
-﻿using Application.Interfaces;
+﻿using Application.Exceptions;
+using Application.Interfaces;
 using Application.Mappers.IMappers;
 using Application.Request;
 using Application.Response;
+using Azure.Core;
 using Domain.Models;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Application.UseCases
 {
@@ -23,9 +26,9 @@ namespace Application.UseCases
         public async Task<TransferResponse> CreateTransfer(CreateTransferRequest request)
         {
             var user1 = await _accountHttpService.GetAccountById(request.SrcAccountId)
-                ?? throw new InvalidOperationException("User not found");
+                ?? throw new Conflict("User not found");
             var user2 = await _accountHttpService.GetAccountById(request.DestAccountId)
-                ?? throw new InvalidOperationException("User not found");
+                ?? throw new Conflict("User not found");
 
 
             var transfer = new Transfer
@@ -45,10 +48,11 @@ namespace Application.UseCases
 
         public async Task<TransferResponse> UpdateTransfer(UpdateTransferRequest request, Guid transferId)
         {
+
             var tranfer = await _query.GetTransferById(transferId);
-            if (!string.IsNullOrWhiteSpace(request.Description))
+            if (tranfer == null) 
             {
-                tranfer.Description = request.Description;
+                throw new ExceptionNotFound("There's no transfer with that Id");
             }
             await _command.UpdateTransfer(tranfer);
             
@@ -57,6 +61,10 @@ namespace Application.UseCases
 
         public async Task<TransferResponse> DeleteTransfer(Guid transfer)
         {
+            if (transfer == null)
+            {
+                throw new ExceptionNotFound("There's no transfer with that Id");
+            }
             var response = await _query.GetTransferById(transfer);
             await _command.DeleteTransfer(transfer);
 
@@ -65,6 +73,10 @@ namespace Application.UseCases
 
         public async Task<TransferResponse>GetTransferById(Guid transferId)
         {
+            if (transferId == null)
+            {
+                throw new ExceptionNotFound("There's no transfer with that Id");
+            }
             var response = await _query.GetTransferById(transferId);
             return await _mapper.GetOneTransfer(response);
         }
@@ -77,6 +89,8 @@ namespace Application.UseCases
 
         public async Task<List<TransferResponse>> GetAllByUser(Guid UserId)
         {
+            var user1 = await _accountHttpService.GetAccountById(UserId)
+            ?? throw new Conflict("User not found");
             var userTransfers = await _query.GetUserTransfers(UserId);
             return await _mapper.GetTransfers(userTransfers);
         }

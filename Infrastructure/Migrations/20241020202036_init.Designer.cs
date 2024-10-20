@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(TransferContext))]
-    [Migration("20241019214904_inicial")]
-    partial class inicial
+    [Migration("20241020202036_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,6 +43,9 @@ namespace Infrastructure.Migrations
 
                     b.Property<Guid>("DestAccountId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<Guid>("SrcAccountId")
                         .HasColumnType("uniqueidentifier");

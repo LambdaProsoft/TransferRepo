@@ -41,6 +41,9 @@ namespace Infrastructure.Migrations
                     b.Property<Guid>("DestAccountId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<Guid>("SrcAccountId")
                         .HasColumnType("uniqueidentifier");
 

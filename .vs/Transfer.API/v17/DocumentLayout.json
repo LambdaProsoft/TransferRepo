@@ -11,36 +11,28 @@
       "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\usecases\\transferservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\infrastructure\\command\\transfercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\command\\transfercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FF37FFB-384B-4DAF-B11C-830BCCC4C19E}|Domain\\Domain.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\domain\\models\\transfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FF37FFB-384B-4DAF-B11C-830BCCC4C19E}|Domain\\Domain.csproj|solutionrelative:domain\\models\\transfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\application\\interfaces\\itransferservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\interfaces\\itransferservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\infrastructure\\query\\transferquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\query\\transferquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\application\\request\\createtransferrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\request\\createtransferrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\application\\usecases\\accounthttpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\usecases\\accounthttpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\transfer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|solutionrelative:transfer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\application\\interfaces\\itransferquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\interfaces\\itransferquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\transfer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|solutionrelative:transfer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\application\\interfaces\\itransferservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\interfaces\\itransferservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\application\\request\\createtransferrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\request\\createtransferrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\infrastructure\\command\\transfercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\command\\transfercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\infrastructure\\query\\transferquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\query\\transferquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,11 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
+              "Title": "TransferQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Infrastructure\\Query\\TransferQuery.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Query\\TransferQuery.cs",
+              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Infrastructure\\Query\\TransferQuery.cs",
+              "RelativeToolTip": "Infrastructure\\Query\\TransferQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T19:14:15.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "TransferCommand.cs",
               "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Infrastructure\\Command\\TransferCommand.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Command\\TransferCommand.cs",
@@ -67,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "CreateTransferRequest.cs",
               "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\Request\\CreateTransferRequest.cs",
               "RelativeDocumentMoniker": "Application\\Request\\CreateTransferRequest.cs",
@@ -76,19 +81,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-20T19:51:07.38Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Transfer.cs",
-              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Domain\\Models\\Transfer.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\Transfer.cs",
-              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Domain\\Models\\Transfer.cs",
-              "RelativeToolTip": "Domain\\Models\\Transfer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T19:50:45.821Z",
               "EditorCaption": ""
             },
             {
@@ -138,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "ITransferQuery.cs",
               "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\Interfaces\\ITransferQuery.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\ITransferQuery.cs",
@@ -151,33 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TransferQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Infrastructure\\Query\\TransferQuery.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Query\\TransferQuery.cs",
-              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Infrastructure\\Query\\TransferQuery.cs",
-              "RelativeToolTip": "Infrastructure\\Query\\TransferQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T19:14:15.008Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TransferServices.cs",
-              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\UseCases\\TransferServices.cs",
-              "RelativeDocumentMoniker": "Application\\UseCases\\TransferServices.cs",
-              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\UseCases\\TransferServices.cs",
-              "RelativeToolTip": "Application\\UseCases\\TransferServices.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAACEAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T22:34:04.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Transfer.API\\Program.cs",
               "RelativeDocumentMoniker": "Transfer.API\\Program.cs",
@@ -190,15 +156,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AccountHttpClientService.cs",
-              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\UseCases\\AccountHttpClientService.cs",
-              "RelativeDocumentMoniker": "Application\\UseCases\\AccountHttpClientService.cs",
-              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\UseCases\\AccountHttpClientService.cs",
-              "RelativeToolTip": "Application\\UseCases\\AccountHttpClientService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA+AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "TransferServices.cs",
+              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\UseCases\\TransferServices.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\TransferServices.cs",
+              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\UseCases\\TransferServices.cs",
+              "RelativeToolTip": "Application\\UseCases\\TransferServices.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAB4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T22:24:04.797Z",
+              "WhenOpened": "2024-10-19T22:34:04.939Z",
               "EditorCaption": ""
             },
             {
@@ -209,7 +175,7 @@
               "RelativeDocumentMoniker": "Transfer.API\\Controllers\\TransferController.cs",
               "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Transfer.API\\Controllers\\TransferController.cs",
               "RelativeToolTip": "Transfer.API\\Controllers\\TransferController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T22:20:06.911Z",
               "EditorCaption": ""

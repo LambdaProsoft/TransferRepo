@@ -19,6 +19,8 @@ namespace Transfer.API.Controllers
         }
 
         [HttpDelete("{Id}")]
+        [ProducesResponseType(typeof(TransferResponse), 200)]
+        [ProducesResponseType(typeof(ApiError), 404)]
         public async Task<IActionResult>DeleteTransfer(Guid Id)
         {
             try
@@ -26,13 +28,15 @@ namespace Transfer.API.Controllers
                 var result = await _services.DeleteTransfer(Id);
                 return new JsonResult(result) { StatusCode = 200 };
             }
-            catch (Exception)
+            catch (ExceptionNotFound ex)
             {
 
-                throw;
+                return new JsonResult(new ApiError { Message = ex.Message }) { StatusCode = 404 }; ;
             }
         }
         [HttpGet]
+        [ProducesResponseType(typeof(List<TransferResponse>), 200)]
+        [ProducesResponseType(typeof(ApiError), 404)]
         public async Task<IActionResult> GetTransferById(Guid transferId)
         {
             try
@@ -40,14 +44,16 @@ namespace Transfer.API.Controllers
                 var result = await _services.GetTransferById(transferId);
                 return new JsonResult(result) { StatusCode = 200 };
             }
-            catch (Exception)
+            catch (ExceptionNotFound ex)
             {
 
-                throw;
+                return new JsonResult(new ApiError { Message = ex.Message }) { StatusCode = 404 }; ;
             }
         }
 
         [HttpGet("{id}/Accounts")]
+        [ProducesResponseType(typeof(List<TransferResponse>), 200)]
+        [ProducesResponseType(typeof(ApiError), 404)]
         public async Task<IActionResult>GetAllTransfersBySrcAccountId(Guid id)
         {
             try
@@ -55,16 +61,15 @@ namespace Transfer.API.Controllers
                 var result = await _services.GetAllByUser(id);
                 return new JsonResult(result) { StatusCode= 200};
             }
-            catch (Exception)
+            catch (Conflict ex)
             {
-
-                throw;
+                return new JsonResult(new ApiError { Message = ex.Message }) { StatusCode = 404 };
             }
         }
 
         [HttpPost]
         [ProducesResponseType(typeof(TransferResponse), 201)]
-        [ProducesResponseType(typeof(List<ExceptionResponse>), 400)]
+        [ProducesResponseType(typeof(ApiError), 404)]
         public async Task<IActionResult> CreateTransfer(CreateTransferRequest request)
         {
             try
@@ -72,17 +77,18 @@ namespace Transfer.API.Controllers
                 var result = await _services.CreateTransfer(request);
                 return new JsonResult(result)
                 {
-                    StatusCode = 200
+                    StatusCode = 201
                 };
             }
-            catch (ObjectNotFoundException ex)
+            catch (Conflict ex)
             {
-                return BadRequest(new ExceptionResponse { message = ex.message });
+                return new JsonResult(new ApiError { Message = ex.Message }) { StatusCode = 404 };
             }
         }
 
         [HttpPut]
-        [ProducesResponseType(typeof(List<TransferResponse>), 200)]
+        [ProducesResponseType(typeof(TransferResponse), 200)]
+        [ProducesResponseType(typeof(ApiError), 404)]
         public async Task<IActionResult> UpdateTransfer(UpdateTransferRequest request, Guid transferId)
         {
             try
@@ -93,9 +99,9 @@ namespace Transfer.API.Controllers
                     StatusCode = 200
                 };
             }
-            catch (ObjectNotFoundException ex)
+            catch (Conflict ex)
             {
-                return BadRequest(new ExceptionResponse { message = ex.message });
+                return new JsonResult(new ApiError { Message = ex.Message }) { StatusCode = 404 };
             }
         }
     }

@@ -19,43 +19,55 @@ namespace Infrastructure.Query
             return transfers;
         }
 
-        public async Task<bool> GetPendingTransfer(Guid UserId)
+
+        public async Task<List<Transfer>> GetTransferByFilter(Guid? UserId, decimal? amount, DateTime? date, int? type, int? status)//Añadir Alias tambien
         {
-            var status = false;
 
-            //var transfer = _context.Transfers.Where(t => t.Status == "Pending")
-            //    .FirstOrDefault(t => t.SrcAccountId == UserId);
+            var list =  _context.Transfers
+                .Include(t => t.TransferType)
+                .Include(t => t.Status)
+                .AsQueryable();
 
-            //if (transfer != null)
-            //{
-            //    status = true;
-            //}
-            return status;
-        }
+            if (UserId != null) 
+            {
+                list = list.Where(x => x.SrcAccountId == UserId);
+            }
+            if (amount != null) 
+            {
+                list = list.Where(list => list.Amount == amount);
+            }
+            if (date.HasValue) 
+            {
+                list = list.Where(list=> list.Date == date.Value);
+            }
+            if (type != null)
+            {
+                list = list.Where(list => list.TypeId == type);
+            }
+            if (status != null)
+            {
+                list = list.Where(list => list.StatusId == status);
+            }
 
-        public async Task<List<Transfer>> GetTransferByAlias(string alias)
-        {
-            throw new NotImplementedException();
-            //Esto tendria que buscar en la base de datos de Account, o que se convoque (En el TransferService)
-            //un metodo de AccountQuery que busque por alias
-        }
+            return await list.ToListAsync();
 
-        public async Task<List<Transfer>> GetTransferByFilter(Guid? UserId, decimal? amount, DateTime? date, int? type, string? status)//Añadir Alias tambien
-        {
-            throw new NotImplementedException();
         }
 
         public async Task<Transfer> GetTransferById(Guid Id)
         {
-            var project = _context.Transfers
+            var project = await _context.Transfers
                 .Include(t => t.TransferType)
                 .Include(t => t.Status)
-                .FirstOrDefault(s => s.Id == Id);
+                .FirstOrDefaultAsync(s => s.Id == Id);
             return project;
         }
+
         public async Task<List<Transfer>> GetUserTransfers(Guid UserId)
         {
-            return await _context.Transfers.Where(t => t.SrcAccountId == UserId).ToListAsync();
+            return await _context.Transfers
+                .Include(t => t.TransferType)
+                .Include(t => t.Status)
+                .Where(t => t.SrcAccountId == UserId).ToListAsync();
         }
     }
 }

@@ -11,7 +11,7 @@
         "projectName": "Application",
         "projectPath": "C:\\Users\\Noxie\\Source\\Repos\\TransferRepo\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Noxie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\obj\\",
+        "outputPath": "C:\\Users\\Noxie\\Source\\Repos\\TransferRepo\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Noxie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -155,7 +155,7 @@
         "projectName": "Infrastructure",
         "projectPath": "C:\\Users\\Noxie\\Source\\Repos\\TransferRepo\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Noxie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Noxie\\Source\\Repos\\TransferRepo\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Noxie\\AppData\\Roaming\\NuGet\\NuGet.Config",

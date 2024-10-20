@@ -15,7 +15,7 @@ namespace Infrastructure.Command
         public async Task DeleteTransfer(Guid transferid)
         {
             var tranfer = await _context.Transfers.FindAsync(transferid);
-            _context.Transfers.Remove(tranfer);
+            tranfer.IsDeleted = true;
             await _context.SaveChangesAsync();
         }
 

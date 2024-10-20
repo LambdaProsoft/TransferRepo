@@ -31,7 +31,7 @@ namespace Application.UseCases
             var transfer = new Transfer
             {
                 Amount = request.Amount,
-                Date = request.Date,
+                Date = DateTime.Now,
                 StatusId =1,
                 Description = request.Description,
                 TypeId = request.TypeId,
@@ -60,6 +60,12 @@ namespace Application.UseCases
             var response = await _query.GetTransferById(transfer);
             await _command.DeleteTransfer(transfer);
 
+            return await _mapper.GetOneTransfer(response);
+        }
+
+        public async Task<TransferResponse>GetTransferById(Guid transferId)
+        {
+            var response = await _query.GetTransferById(transferId);
             return await _mapper.GetOneTransfer(response);
         }
 

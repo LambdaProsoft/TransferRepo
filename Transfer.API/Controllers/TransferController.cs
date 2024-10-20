@@ -11,12 +11,57 @@ namespace Transfer.API.Controllers
     public class TransferController : ControllerBase
     {
         private readonly ITransferServices _services;
-        private readonly HttpClient _httpClient;
+
         public TransferController(ITransferServices services, HttpClient httpClient)
         {
             _services = services;
-            _httpClient = httpClient;
+
         }
+
+        [HttpDelete("{Id}")]
+        public async Task<IActionResult>DeleteTransfer(Guid Id)
+        {
+            try
+            {
+                var result = await _services.DeleteTransfer(Id);
+                return new JsonResult(result) { StatusCode = 200 };
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetTransferById(Guid transferId)
+        {
+            try
+            {
+                var result = await _services.GetTransferById(transferId);
+                return new JsonResult(result) { StatusCode = 200 };
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpGet("{id}/Accounts")]
+        public async Task<IActionResult>GetAllTransfersBySrcAccountId(Guid id)
+        {
+            try
+            {
+                var result = await _services.GetAllByUser(id);
+                return new JsonResult(result) { StatusCode= 200};
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         [HttpPost]
         [ProducesResponseType(typeof(TransferResponse), 201)]
         [ProducesResponseType(typeof(List<ExceptionResponse>), 400)]

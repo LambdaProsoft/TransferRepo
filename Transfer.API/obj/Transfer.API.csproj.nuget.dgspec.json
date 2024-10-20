@@ -238,7 +238,7 @@
         "projectName": "Transfer.API",
         "projectPath": "C:\\Users\\Noxie\\Source\\Repos\\TransferRepo\\Transfer.API\\Transfer.API.csproj",
         "packagesPath": "C:\\Users\\Noxie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Noxie\\Source\\Repos\\TransferRepo\\Transfer.API\\obj\\",
+        "outputPath": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Transfer.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Noxie\\AppData\\Roaming\\NuGet\\NuGet.Config",

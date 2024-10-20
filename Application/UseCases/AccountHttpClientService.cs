@@ -21,8 +21,7 @@ namespace Application.UseCases
         public async Task<AccountDetailsResponse> GetAccountById(Guid id)
         {
 
-            var response = await _httpClient.GetAsync($"https://localhost:7160/api/User/1");
-            var x = 1;
+            var response = await _httpClient.GetAsync($"https://localhost:7160/api/User/{id}");
             if (response.IsSuccessStatusCode)
             {
                 var respo = response;

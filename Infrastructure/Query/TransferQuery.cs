@@ -23,13 +23,13 @@ namespace Infrastructure.Query
         {
             var status = false;
 
-            var transfer = _context.Transfers.Where(t => t.Status == "Pending")
-                .FirstOrDefault(t => t.SrcAccountId == UserId);
+            //var transfer = _context.Transfers.Where(t => t.Status == "Pending")
+            //    .FirstOrDefault(t => t.SrcAccountId == UserId);
 
-            if (transfer != null)
-            {
-                status = true;
-            }
+            //if (transfer != null)
+            //{
+            //    status = true;
+            //}
             return status;
         }
 
@@ -47,8 +47,10 @@ namespace Infrastructure.Query
 
         public async Task<Transfer> GetTransferById(Guid Id)
         {
-            var project = _context.Transfers.
-                FirstOrDefault(s => s.Id == Id);
+            var project = _context.Transfers
+                .Include(t => t.TransferType)
+                .Include(t => t.Status)
+                .FirstOrDefault(s => s.Id == Id);
             return project;
         }
         public async Task<List<Transfer>> GetUserTransfers(Guid UserId)

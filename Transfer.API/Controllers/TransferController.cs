@@ -11,18 +11,38 @@ namespace Transfer.API.Controllers
     public class TransferController : ControllerBase
     {
         private readonly ITransferServices _services;
-        public TransferController(ITransferServices services)
+        private readonly HttpClient _httpClient;
+        public TransferController(ITransferServices services, HttpClient httpClient)
         {
             _services = services;
+            _httpClient = httpClient;
         }
         [HttpPost]
-        [ProducesResponseType(typeof(List<TransferResponse>), 201)]
+        [ProducesResponseType(typeof(TransferResponse), 201)]
         [ProducesResponseType(typeof(List<ExceptionResponse>), 400)]
         public async Task<IActionResult> CreateTransfer(CreateTransferRequest request)
         {
             try
             {
                 var result = await _services.CreateTransfer(request);
+                return new JsonResult(result)
+                {
+                    StatusCode = 200
+                };
+            }
+            catch (ObjectNotFoundException ex)
+            {
+                return BadRequest(new ExceptionResponse { message = ex.message });
+            }
+        }
+
+        [HttpPut]
+        [ProducesResponseType(typeof(List<TransferResponse>), 200)]
+        public async Task<IActionResult> UpdateTransfer(UpdateTransferRequest request, Guid transferId)
+        {
+            try
+            {
+                var result = await _services.UpdateTransfer(request,transferId);
                 return new JsonResult(result)
                 {
                     StatusCode = 200

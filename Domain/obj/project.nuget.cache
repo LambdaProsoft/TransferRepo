@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rAW5WaNKGn9VTJCtbL1F/jZOVsHRuIlCMdmh5V9O05L3RQjNY3peSGto2aQ+Zn9qE0jRuEqozTN99Su3Fe1+aQ==",
+  "dgSpecHash": "F7lPVIl08ew=",
   "success": true,
-  "projectFilePath": "C:\\Users\\diego\\source\\repos\\Transfer.API\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Noxie\\Source\\Repos\\TransferRepo\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

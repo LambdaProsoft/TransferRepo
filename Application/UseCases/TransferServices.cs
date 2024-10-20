@@ -11,122 +11,56 @@ namespace Application.UseCases
         private readonly ITransferCommand _command;
         private readonly ITransferQuery _query;
         private readonly ITransferMapper _mapper;
-        // private readonly IAccountQuery _accountQuery;
-        //private readonly IAccountCommand _accountCommand;
-        //Necesitaria acceder a la Cuenta que realiza la transferencia y verificar en la lista de transferencias,
-        //si hay alguna a su nombre que este pendiente
+        private readonly IAccountHttpService _accountHttpService;
 
-        public TransferServices(ITransferCommand command, ITransferQuery query, ITransferMapper mapper
-            //, IAccountQuery accountQuery, IAccountCommand accountCommand
-            )
+        public TransferServices(ITransferCommand command, ITransferQuery query, ITransferMapper mapper,IAccountHttpService accountHttpService)
         {
             _command = command;
             _query = query;
             _mapper = mapper;
-            //_accountQuery = accountQuery;
-            //_accountCommand = accountCommand;
+            _accountHttpService = accountHttpService;
         }
         public async Task<TransferResponse> CreateTransfer(CreateTransferRequest request)
         {
-            //var srcAccount = await _accountQuery.GetAccount(request.SrcAccountId);
-            //var destAccount = await _accountQuery.GetAccount(request.DestAccountId);
+            var user1 = await _accountHttpService.GetAccountById(request.SrcAccountId)
+                ?? throw new InvalidOperationException("User not found");
+            var user2 = await _accountHttpService.GetAccountById(request.DestAccountId)
+                ?? throw new InvalidOperationException("User not found");
 
-            //var srcAccount = await ConexionAccount.getAccount();
-            //var destAccount = await ConexionAccount.getAccount();
-
-
-            //if (srcAccount == null || destAccount == null) {
-            //    throw new ObjectNotFoundException("Account not Found Exception");
-            //}
 
             var transfer = new Transfer
             {
                 Amount = request.Amount,
                 Date = request.Date,
-                Status = "Pending",
+                StatusId =1,
                 Description = request.Description,
                 TypeId = request.TypeId,
                 SrcAccountId = request.SrcAccountId,
                 DestAccountId = request.DestAccountId,
             };
-            await _command.InsertTransfer(transfer);
+            var response = await _command.InsertTransfer(transfer);
 
-            //if (srcAccount.Balance < transfer.Amount)
-            //{
-            //    throw new Exception("Not enough balance to make transference");
-            //}
-
-            //if (await MakeTransfer(transfer, srcAccount, destAccount) == false)
-            //{
-            //    transfer.Status = "Canceled";
-            //    await _command.UpdateTransfer(transfer);
-            //}
-            //else
-            //{
-            transfer.Status = "Completed";
-            await _command.UpdateTransfer(transfer);
-            //}
-            return await _mapper.GetOneTransfer(transfer);
+            return await _mapper.GetOneTransfer(await _query.GetTransferById(response.Id));
         }
-        public async Task<bool> MakeTransfer(Transfer transfer, AccountModel srcAccount, AccountModel destAccount)
+
+        public async Task<TransferResponse> UpdateTransfer(UpdateTransferRequest request, Guid transferId)
         {
-            if (await _query.GetPendingTransfer(transfer.SrcAccountId) == false)
+            var tranfer = await _query.GetTransferById(transferId);
+            if (!string.IsNullOrWhiteSpace(request.Description))
             {
-
-                if (srcAccount.StateAccount.Name == "Suspended")
-                {
-                    return false;
-                }
-                else if (destAccount.StateAccount.Name == "Suspended")
-                {
-                    return false;
-                }
-                else if (srcAccount.StateAccount.Name == "Blocked")
-                {
-                    return false;
-                }
-                else if (destAccount.StateAccount.Name == "Blocked")
-                {
-                    return false;
-                }
-
-                //srcAccount.Balance -= transfer.Amount;
-                //destAccount.Balance += transfer.Amount;
-
-                //LO DE CAMBIAR EL MONTO LO HACE ACCOUNT
-                /*CONEXIONACCOUNT.updateBalance(transfer.amount);
-                 
-                */
-
-                //await _accountCommand.UpdateAccount(srcAccount);
-                //await _accountCommand.UpdateAccount(destAccount);
-
-
-
-                return true;
+                tranfer.Description = request.Description;
             }
-            return false;
-        }
-        public async Task<TransferResponse> UpdateTransfer(CreateTransferRequest request)
-        {
-            var transfer = new Transfer
-            {
-                Amount = request.Amount,
-                Date = request.Date,
-                Status = "",
-                Description = request.Description,
-                TypeId = request.TypeId,
-                SrcAccountId = request.SrcAccountId,
-                DestAccountId = request.DestAccountId,
-            };
-            await _command.UpdateTransfer(transfer);
-            return await _mapper.GetOneTransfer(transfer);
-            throw new NotImplementedException();
+            await _command.UpdateTransfer(tranfer);
+            
+            return await _mapper.GetOneTransfer(await _query.GetTransferById(tranfer.Id));
         }
 
-        public Task<TransferResponse> DeleteTransfer(Transfer transfer)
+        public async Task<TransferResponse> DeleteTransfer(Guid transfer)
         {
-            throw new NotImplementedException();
+            var response = await _query.GetTransferById(transfer);
+            await _command.DeleteTransfer(transfer);
+
+            return await _mapper.GetOneTransfer(response);
         }
 
         public async Task<List<TransferResponse>> GetAll()

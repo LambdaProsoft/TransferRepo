@@ -12,26 +12,18 @@ namespace Infrastructure.Command
             _context = context;
         }
 
-        public async Task CompleteTransfer(AccountModel srcAccount, AccountModel destAccount)
+        public async Task DeleteTransfer(Guid transferid)
         {
-            //Este metodo tendria que ir en AccountCommand
-            _context.Update(srcAccount);
-            _context.Update(destAccount);
-            await _context.SaveChangesAsync();
-            //return true;
-            //throw new NotImplementedException();
-        }
-
-        public async Task DeleteTransfer(Transfer transfer)
-        {
-            _context.Remove(transfer);
+            var tranfer = await _context.Transfers.FindAsync(transferid);
+            _context.Transfers.Remove(tranfer);
             await _context.SaveChangesAsync();
         }
 
-        public async Task InsertTransfer(Transfer transfer)
+        public async Task<Transfer> InsertTransfer(Transfer transfer)
         {
             _context.Add(transfer);
             await _context.SaveChangesAsync();
+            return transfer;
         }
 
         public async Task UpdateTransfer(Transfer transfer)

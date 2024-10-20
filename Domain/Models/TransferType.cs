@@ -2,7 +2,10 @@
 {
     public class TransferType
     {
-        public int Id { get; set; }
+        public int TransferTypeId { get; set; }
         public required string Name { get; set; }
+
+
+        public List<Transfer>Transfers { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Application.Mappers.IMappers;
 using Application.Response;
 using Domain.Models;
+using System.Transactions;
 
 namespace Application.Mappers
 {
@@ -14,7 +15,7 @@ namespace Application.Mappers
                 Id = transfer.Id,
                 Amount = transfer.Amount,
                 Date = transfer.Date,
-                Status = transfer.Status,
+                Status = await GetTransferStatusResponse(transfer.Status),
                 Description = transfer.Description,
                 TypeId = transfer.TypeId,
                 SrcAccountId = transfer.SrcAccountId,
@@ -33,7 +34,7 @@ namespace Application.Mappers
                     Id = transfer.Id,
                     Amount = transfer.Amount,
                     Date = transfer.Date,
-                    Status = transfer.Status,
+                    Status = await GetTransferStatusResponse(transfer.Status),
                     Description = transfer.Description,
                     TypeId = transfer.TypeId,
                     SrcAccountId = transfer.SrcAccountId,
@@ -43,5 +44,15 @@ namespace Application.Mappers
             }
             return responses;
         }
+
+        public Task<TransferStatusResponse> GetTransferStatusResponse(TransferStatus status)
+        {
+            var response = new TransferStatusResponse
+            {
+                Id = status.TransferStatusId,
+                Status = status.Status,
+            };
+            return Task.FromResult(response) ;
+         }
     }
 }

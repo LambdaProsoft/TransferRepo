@@ -4,11 +4,8 @@ namespace Application.Interfaces
 {
     public interface ITransferCommand
     {
-        public Task InsertTransfer(Transfer transfer);
-
-        //Este seria cambiado por un metodo para actualizar Accounts en Account
-        public Task CompleteTransfer(AccountModel srcAccount, AccountModel destAccount);
-        public Task DeleteTransfer(Transfer transfer);
+        public Task<Transfer> InsertTransfer(Transfer transfer);
+        public Task DeleteTransfer(Guid transferid);
         public Task UpdateTransfer(Transfer transfer);
     }
 }

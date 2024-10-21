@@ -25,10 +25,25 @@ namespace Application.UseCases
         }
         public async Task<TransferResponse> CreateTransfer(CreateTransferRequest request)
         {
-            var user1 = await _accountHttpService.GetAccountById(request.SrcAccountId)
-                ?? throw new Conflict("User not found");
-            var user2 = await _accountHttpService.GetAccountById(request.DestAccountId)
-                ?? throw new Conflict("User not found");
+            var accountSrc = await _accountHttpService.GetAccountById(request.SrcAccountId)
+                ?? throw new Conflict("Source account not found");
+
+            var accountDest = await _accountHttpService.GetAccountById(request.DestAccountId)
+                ?? throw new Conflict("Destine account not found");
+
+            var balanceData1 = new AccountBalanceRequest
+            {   // Option false para restar el balance de la cuenta
+                Option = false,
+                Balance = request.Amount
+            };
+            var response1 = await _accountHttpService.UpdateAccountBalance(accountSrc.Account.AccountId, balanceData1);
+
+            var balanceData2 = new AccountBalanceRequest
+            {   // Option true para sumar el balance de la cuenta
+                Option = true,
+                Balance = request.Amount
+            };
+            var response2 = await _accountHttpService.UpdateAccountBalance(accountDest.Account.AccountId, balanceData2);
 
 
             var transfer = new Transfer
@@ -95,6 +110,11 @@ namespace Application.UseCases
             return await _mapper.GetTransfers(userTransfers);
         }
 
-
+        public async Task<List<TransferResponse>> GetAllByAccount(Guid accountId)
+        {
+            var transfers = await _query.GetTransfersByAccount(accountId)
+                ?? throw new Conflict("Account not found");
+            return await _mapper.GetTransfers(transfers);
+        }
     }
 }

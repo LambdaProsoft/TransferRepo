@@ -1,46 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\",
+  "WorkspaceRootPath": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\application\\usecases\\accounthttpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\usecases\\accounthttpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\transfer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|solutionrelative:transfer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\transfer.api\\controllers\\transfercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|solutionrelative:transfer.api\\controllers\\transfercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\application\\usecases\\transferservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\gonza\\desktop\\ps- proyecto\\src\\virtualwallet-preview\\transferrepo\\application\\usecases\\transferservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\usecases\\transferservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\application\\interfaces\\itransferquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\interfaces\\itransferquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\gonza\\desktop\\ps- proyecto\\src\\virtualwallet-preview\\transferrepo\\application\\usecases\\accounthttpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\usecases\\accounthttpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\application\\interfaces\\itransferservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\interfaces\\itransferservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\gonza\\desktop\\ps- proyecto\\src\\virtualwallet-preview\\transferrepo\\application\\request\\accountbalancerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\request\\accountbalancerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\application\\request\\createtransferrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\request\\createtransferrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\infrastructure\\command\\transfercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\command\\transfercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|c:\\users\\noxie\\source\\repos\\transferrepo\\infrastructure\\query\\transferquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\query\\transferquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\gonza\\desktop\\ps- proyecto\\src\\virtualwallet-preview\\transferrepo\\application\\interfaces\\iaccounthttpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iaccounthttpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,24 +26,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountHttpClientService.cs",
-              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\UseCases\\AccountHttpClientService.cs",
-              "RelativeDocumentMoniker": "Application\\UseCases\\AccountHttpClientService.cs",
-              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\UseCases\\AccountHttpClientService.cs",
-              "RelativeToolTip": "Application\\UseCases\\AccountHttpClientService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABfAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AccountBalanceRequest.cs",
+              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\Request\\AccountBalanceRequest.cs",
+              "RelativeDocumentMoniker": "Application\\Request\\AccountBalanceRequest.cs",
+              "ToolTip": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\Request\\AccountBalanceRequest.cs",
+              "RelativeToolTip": "Application\\Request\\AccountBalanceRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T21:32:45.749Z",
+              "WhenOpened": "2024-10-21T18:03:12.051Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -75,147 +47,54 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "Name": "ST:0:0:{b1ce3aef-c78d-49ee-b72b-ec1fbc908313}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Infrastructure.csproj",
-              "DocumentMoniker": "C:\\Users\\Noxie\\Source\\Repos\\TransferRepo\\Infrastructure\\Infrastructure.csproj",
-              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
-              "ToolTip": "C:\\Users\\Noxie\\Source\\Repos\\TransferRepo\\Infrastructure\\Infrastructure.csproj",
-              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-20T20:57:59.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TransferQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Infrastructure\\Query\\TransferQuery.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Query\\TransferQuery.cs",
-              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Infrastructure\\Query\\TransferQuery.cs",
-              "RelativeToolTip": "Infrastructure\\Query\\TransferQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T19:14:15.008Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TransferCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Infrastructure\\Command\\TransferCommand.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Command\\TransferCommand.cs",
-              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Infrastructure\\Command\\TransferCommand.cs",
-              "RelativeToolTip": "Infrastructure\\Command\\TransferCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T19:55:16.96Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateTransferRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\Request\\CreateTransferRequest.cs",
-              "RelativeDocumentMoniker": "Application\\Request\\CreateTransferRequest.cs",
-              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\Request\\CreateTransferRequest.cs",
-              "RelativeToolTip": "Application\\Request\\CreateTransferRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T19:51:07.38Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ITransferServices.cs",
-              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\Interfaces\\ITransferServices.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\ITransferServices.cs",
-              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\Interfaces\\ITransferServices.cs",
-              "RelativeToolTip": "Application\\Interfaces\\ITransferServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T19:39:00.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ITransferQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\Interfaces\\ITransferQuery.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\ITransferQuery.cs",
-              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\Interfaces\\ITransferQuery.cs",
-              "RelativeToolTip": "Application\\Interfaces\\ITransferQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T19:15:41.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Transfer.API\\Program.cs",
-              "RelativeDocumentMoniker": "Transfer.API\\Program.cs",
-              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Transfer.API\\Program.cs",
-              "RelativeToolTip": "Transfer.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T21:43:10.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TransferServices.cs",
-              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\UseCases\\TransferServices.cs",
-              "RelativeDocumentMoniker": "Application\\UseCases\\TransferServices.cs",
-              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Application\\UseCases\\TransferServices.cs",
-              "RelativeToolTip": "Application\\UseCases\\TransferServices.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAB4AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T22:34:04.939Z"
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TransferController.cs",
-              "DocumentMoniker": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Transfer.API\\Controllers\\TransferController.cs",
-              "RelativeDocumentMoniker": "Transfer.API\\Controllers\\TransferController.cs",
-              "ToolTip": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Transfer.API\\Controllers\\TransferController.cs",
-              "RelativeToolTip": "Transfer.API\\Controllers\\TransferController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
+              "Title": "IAccountHttpService.cs",
+              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\Interfaces\\IAccountHttpService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IAccountHttpService.cs",
+              "ToolTip": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\Interfaces\\IAccountHttpService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IAccountHttpService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T22:20:06.911Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 1076,
-          "SelectedChildIndex": -1,
-          "Children": [
+              "WhenOpened": "2024-10-21T18:00:19.378Z",
+              "EditorCaption": ""
+            },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountHttpClientService.cs",
+              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\UseCases\\AccountHttpClientService.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\AccountHttpClientService.cs",
+              "ToolTip": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\UseCases\\AccountHttpClientService.cs",
+              "RelativeToolTip": "Application\\UseCases\\AccountHttpClientService.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwEAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T17:57:56.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransferServices.cs",
+              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\UseCases\\TransferServices.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\TransferServices.cs",
+              "ToolTip": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\UseCases\\TransferServices.cs",
+              "RelativeToolTip": "Application\\UseCases\\TransferServices.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwC0AAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T17:22:11.333Z",
+              "EditorCaption": ""
             }
           ]
         }

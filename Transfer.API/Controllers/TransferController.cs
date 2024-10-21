@@ -58,7 +58,7 @@ namespace Transfer.API.Controllers
         {
             try
             {
-                var result = await _services.GetAllByUser(id);
+                var result = await _services.GetAllByAccount(id);
                 return new JsonResult(result) { StatusCode= 200};
             }
             catch (Conflict ex)

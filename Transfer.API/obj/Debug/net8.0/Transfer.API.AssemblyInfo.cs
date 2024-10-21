@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Transfer.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f230620d535d9e0bc661f2caddc6b80270712489")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb7b3a993410dab340eaef1f6ca0c8e1b763c83c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Transfer.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Transfer.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

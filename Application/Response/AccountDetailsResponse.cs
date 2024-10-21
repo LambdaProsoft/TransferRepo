@@ -10,5 +10,6 @@ namespace Application.Response
     {
         public AccountResponse Account { get; set; }
         public UserResponse User { get; set; }
+        public List<TransferResponse> Transfers { get; set; }
     }
 }

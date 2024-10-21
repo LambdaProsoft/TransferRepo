@@ -69,5 +69,13 @@ namespace Infrastructure.Query
                 .Include(t => t.Status)
                 .Where(t => t.SrcAccountId == UserId).ToListAsync();
         }
+
+        public async Task<List<Transfer>> GetTransfersByAccount(Guid accountId)
+        {
+            return await _context.Transfers
+                .Include(t => t.TransferType)
+                .Include(t => t.Status)
+                .Where(t => t.SrcAccountId == accountId).ToListAsync();
+        }
     }
 }

@@ -8,6 +8,7 @@ namespace Application.Interfaces
     {
         Task<List<TransferResponse>> GetAll();
         Task<List<TransferResponse>> GetAllByUser(Guid id);
+        Task<List<TransferResponse>> GetAllByAccount(Guid id);
         Task<TransferResponse> GetTransferById(Guid transferId);
         Task<TransferResponse> CreateTransfer(CreateTransferRequest request);
         Task<TransferResponse> UpdateTransfer(UpdateTransferRequest request, Guid transferId);

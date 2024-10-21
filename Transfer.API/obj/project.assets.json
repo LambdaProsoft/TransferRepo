@@ -4537,19 +4537,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Noxie\\.nuget\\packages\\": {}
+    "C:\\Users\\gonza\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Noxie\\Source\\Repos\\TransferRepo\\Transfer.API\\Transfer.API.csproj",
+      "projectUniqueName": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Transfer.API\\Transfer.API.csproj",
       "projectName": "Transfer.API",
-      "projectPath": "C:\\Users\\Noxie\\Source\\Repos\\TransferRepo\\Transfer.API\\Transfer.API.csproj",
-      "packagesPath": "C:\\Users\\Noxie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Noxie\\source\\repos\\TransferRepo\\Transfer.API\\obj\\",
+      "projectPath": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Transfer.API\\Transfer.API.csproj",
+      "packagesPath": "C:\\Users\\gonza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Transfer.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Noxie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gonza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4558,14 +4558,14 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Noxie\\Source\\Repos\\TransferRepo\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Noxie\\Source\\Repos\\TransferRepo\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -4615,7 +4615,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

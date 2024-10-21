@@ -8,6 +8,7 @@ namespace Application.Response
 {
     public class AccountResponse
     {
+        public Guid AccountId { get; set; }
         public string CBU { get; set; }
         public string Alias { get; set; }
         public string NumeroDeCuenta { get; set; }

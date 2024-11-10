@@ -10,7 +10,7 @@ namespace Application.Interfaces
 {
     public interface IAccountHttpService
     {
-        Task<AccountDetailsResponse> GetAccountById(Guid id);
+        Task<AccountResponse> GetAccountById(Guid id);
         Task<TransferProcess> UpdateAccountBalance(Guid id, AccountBalanceRequest balanceData);
         Task<AccountResponse> GetAccountByUserId(Guid userId);
     }

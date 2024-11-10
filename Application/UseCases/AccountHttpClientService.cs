@@ -1,6 +1,7 @@
 ﻿using Application.Interfaces;
 using Application.Request;
 using Application.Response;
+using Azure.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,27 +22,22 @@ namespace Application.UseCases
             _httpClient = httpClient; 
         }
 
-        public async Task<AccountDetailsResponse> GetAccountById(Guid id)
+        //OBSOLETO
+        public async Task<AccountResponse> GetAccountById(Guid id)
         {
-
             var response = await _httpClient.GetAsync($"https://localhost:7214/api/Account/{id}");
             if (response.IsSuccessStatusCode)
             {
                 var respo = response;
 
-                return await response.Content.ReadFromJsonAsync<AccountDetailsResponse>();
+                return await response.Content.ReadFromJsonAsync<AccountResponse>();
             }
-
             return null; // Manejar errores de forma apropiada
         }
 
         public async Task<TransferProcess> UpdateAccountBalance(Guid id, AccountBalanceRequest balanceData)
         {
-            var content = new StringContent(
-                JsonSerializer.Serialize(balanceData),
-                Encoding.UTF8,
-                "application/json"
-                );
+            var content = JsonContent.Create(balanceData);
             var response = await _httpClient.PatchAsync($"https://localhost:7214/api/Account/Update/Balance/{id}", content);
 
             if (response.IsSuccessStatusCode)
@@ -67,5 +63,6 @@ namespace Application.UseCases
             return null; // Manejar errores de forma apropiada
         }
 
+        
     }
 }

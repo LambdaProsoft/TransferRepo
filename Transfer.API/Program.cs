@@ -28,6 +28,13 @@ builder.Services.AddScoped<ITransferQuery, TransferQuery>();
 builder.Services.AddScoped<ITransferCommand, TransferCommand>();
 builder.Services.AddScoped<ITransferMapper, TransferMapper>();
 
+builder.Services.AddScoped<ITransferStatusServices, TransferStatusServices>();
+builder.Services.AddScoped<ITransferStatusQuery, TransferStatusQuery>();
+builder.Services.AddScoped<ITransferStatusMapper, TransferStatusMapper>();
+
+builder.Services.AddScoped<ITransferTypeServices, TransferTypeServices>();
+builder.Services.AddScoped<ITransferTypeQuery, TransferTypeQuery>();
+builder.Services.AddScoped<ITransferTypeMapper, TransferTypeMapper>();
 
 builder.Services.AddCors(options =>
 {

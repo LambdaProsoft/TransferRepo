@@ -19,11 +19,10 @@ namespace Infrastructure.Command
             await _context.SaveChangesAsync();
         }
 
-        public async Task<Transfer> InsertTransfer(Transfer transfer)
+        public async Task InsertTransfer(Transfer transfer)
         {
             _context.Add(transfer);
             await _context.SaveChangesAsync();
-            return transfer;
         }
 
         public async Task UpdateTransfer(Transfer transfer)

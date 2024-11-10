@@ -7,7 +7,10 @@ namespace Application.Mappers
 {
     public class TransferMapper : ITransferMapper
     {
-        public TransferMapper() { }
+        private readonly ITransferStatusMapper _statusMapper;
+        public TransferMapper(ITransferStatusMapper statusMapper) {
+            _statusMapper = statusMapper;
+        }
         public async Task<TransferResponse> GetOneTransfer(Transfer transfer)
         {
             var response = new TransferResponse
@@ -15,7 +18,7 @@ namespace Application.Mappers
                 Id = transfer.Id,
                 Amount = transfer.Amount,
                 Date = transfer.Date,
-                Status = await GetTransferStatusResponse(transfer.Status),
+                Status = await _statusMapper.GetOneTransferStatus(transfer.Status),//await GetTransferStatusResponse(transfer.Status),
                 Description = transfer.Description,
                 TypeId = transfer.TypeId,
                 SrcAccountId = transfer.SrcAccountId,
@@ -34,7 +37,7 @@ namespace Application.Mappers
                     Id = transfer.Id,
                     Amount = transfer.Amount,
                     Date = transfer.Date,
-                    Status = await GetTransferStatusResponse(transfer.Status),
+                    Status = await _statusMapper.GetOneTransferStatus(transfer.Status),//await GetTransferStatusResponse(transfer.Status),
                     Description = transfer.Description,
                     TypeId = transfer.TypeId,
                     SrcAccountId = transfer.SrcAccountId,
@@ -45,14 +48,14 @@ namespace Application.Mappers
             return responses;
         }
 
-        public Task<TransferStatusResponse> GetTransferStatusResponse(TransferStatus status)
-        {
-            var response = new TransferStatusResponse
-            {
-                Id = status.TransferStatusId,
-                Status = status.Status,
-            };
-            return Task.FromResult(response) ;
-         }
+        //public Task<TransferStatusResponse> GetTransferStatusResponse(TransferStatus status)
+        //{
+        //    var response = new TransferStatusResponse
+        //    {
+        //        Id = status.TransferStatusId,
+        //        Status = status.Status,
+        //    };
+        //    return Task.FromResult(response) ;
+        //}
     }
 }

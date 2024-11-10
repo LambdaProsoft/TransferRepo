@@ -4,8 +4,6 @@
     {
         public int TransferTypeId { get; set; }
         public required string Name { get; set; }
-
-
         public List<Transfer>Transfers { get; set; }
     }
 }

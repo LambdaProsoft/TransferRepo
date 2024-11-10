@@ -26,39 +26,61 @@ namespace Application.UseCases
         public async Task<TransferResponse> CreateTransfer(CreateTransferRequest request)
         {
             var accountSrc = await _accountHttpService.GetAccountById(request.SrcAccountId)
-                ?? throw new Conflict("Source account not found");
+            ?? throw new Conflict("Source account not found");
 
             var accountDest = await _accountHttpService.GetAccountById(request.DestAccountId)
-                ?? throw new Conflict("Destine account not found");
+            ?? throw new Conflict("Destine account not found");
 
-            var balanceData1 = new AccountBalanceRequest
-            {   // Option false para restar el balance de la cuenta
-                Option = false,
-                Balance = request.Amount
-            };
-            var response1 = await _accountHttpService.UpdateAccountBalance(accountSrc.Account.AccountId, balanceData1);
-
-            var balanceData2 = new AccountBalanceRequest
-            {   // Option true para sumar el balance de la cuenta
-                Option = true,
-                Balance = request.Amount
-            };
-            var response2 = await _accountHttpService.UpdateAccountBalance(accountDest.Account.AccountId, balanceData2);
-
+            var accountTransfers = await _query.GetTransferByFilter(accountSrc.AccountId, null, null, null, 1);
+            if (accountTransfers.Count() != 0)
+            {
+                throw new AccountErrorException("You have a transference in course, please wait untill it is finished");
+            }
 
             var transfer = new Transfer
             {
                 Amount = request.Amount,
                 Date = DateTime.Now,
-                StatusId =1,
+                StatusId = 1,
                 Description = request.Description,
                 TypeId = request.TypeId,
                 SrcAccountId = request.SrcAccountId,
                 DestAccountId = request.DestAccountId,
             };
-            var response = await _command.InsertTransfer(transfer);
 
-            return await _mapper.GetOneTransfer(await _query.GetTransferById(response.Id));
+            if (accountDest.EstadoDeLaCuenta == "Active" && accountSrc.EstadoDeLaCuenta == "Active")
+            {
+                    if (accountDest.Balance < transfer.Amount) {
+                        transfer.StatusId = 3;
+                        await _command.UpdateTransfer(transfer);
+                        throw new AccountErrorException("Not enough money to make the transaction");
+                    }
+                    else {
+                        await _command.InsertTransfer(transfer);
+                        var balanceData1 = new AccountBalanceRequest
+                        {
+                            Option = false,
+                            Balance = request.Amount
+                        };
+                        var response1 = await _accountHttpService.UpdateAccountBalance(accountSrc.AccountId, balanceData1);
+
+                        var balanceData2 = new AccountBalanceRequest
+                        {
+                            Option = true,
+                            Balance = request.Amount
+                        };
+                        var response2 = await _accountHttpService.UpdateAccountBalance(accountDest.AccountId, balanceData2);
+
+                        transfer.StatusId = 2;
+                        await _command.UpdateTransfer(transfer);
+                    }
+            }
+            else {
+                transfer.StatusId = 3;
+                await _command.UpdateTransfer(transfer);
+                throw new Conflict("Transference canceled for 'internal' issues");
+            }
+            return await _mapper.GetOneTransfer(await _query.GetTransferById(transfer.Id));
         }
 
         public async Task<TransferResponse> UpdateTransfer(UpdateTransferRequest request, Guid transferId)

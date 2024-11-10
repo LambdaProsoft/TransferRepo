@@ -15,7 +15,6 @@ namespace Transfer.API.Controllers
         public TransferController(ITransferServices services, HttpClient httpClient)
         {
             _services = services;
-
         }
 
         [HttpDelete("{Id}")]
@@ -81,6 +80,10 @@ namespace Transfer.API.Controllers
                 };
             }
             catch (Conflict ex)
+            {
+                return new JsonResult(new ApiError { Message = ex.Message }) { StatusCode = 404 };
+            }
+            catch (AccountErrorException ex)
             {
                 return new JsonResult(new ApiError { Message = ex.Message }) { StatusCode = 404 };
             }

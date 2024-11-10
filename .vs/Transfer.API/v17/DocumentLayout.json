@@ -1,22 +1,118 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\",
+  "WorkspaceRootPath": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\gonza\\desktop\\ps- proyecto\\src\\virtualwallet-preview\\transferrepo\\application\\usecases\\transferservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\usecases\\transferservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\gonza\\desktop\\ps- proyecto\\src\\virtualwallet-preview\\transferrepo\\application\\usecases\\accounthttpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\usecases\\accounthttpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\usecases\\accounthttpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\gonza\\desktop\\ps- proyecto\\src\\virtualwallet-preview\\transferrepo\\application\\request\\accountbalancerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\request\\accountbalancerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\mappers\\transfertypemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\mappers\\transfertypemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\gonza\\desktop\\ps- proyecto\\src\\virtualwallet-preview\\transferrepo\\application\\interfaces\\iaccounthttpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\mappers\\transferstatusmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\mappers\\transferstatusmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\mappers\\transfermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\mappers\\transfermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\response\\transfertyperesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\response\\transfertyperesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\transfer.api\\controllers\\transfercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|solutionrelative:transfer.api\\controllers\\transfercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\usecases\\transferservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\usecases\\transferservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\infrastructure\\command\\transfercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\command\\transfercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\interfaces\\itransfercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\interfaces\\itransfercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\infrastructure\\query\\transferquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\query\\transferquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\infrastructure\\query\\transferstatusquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\query\\transferstatusquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\transfer.api\\controllers\\transferstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|solutionrelative:transfer.api\\controllers\\transferstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\transfer.api\\controllers\\transfertypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|solutionrelative:transfer.api\\controllers\\transfertypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\infrastructure\\query\\transfertypequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4F4C322-991C-43AC-AB7C-D23DB4B3A161}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\query\\transfertypequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\usecases\\transfertypeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\usecases\\transfertypeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\usecases\\transferstatusservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\usecases\\transferstatusservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\transfer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|solutionrelative:transfer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\mappers\\imappers\\itransferstatusmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\mappers\\imappers\\itransferstatusmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\interfaces\\itransferstatusquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\interfaces\\itransferstatusquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\interfaces\\itransfertypeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\interfaces\\itransfertypeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\interfaces\\itransferstatusservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\interfaces\\itransferstatusservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\interfaces\\itransfertypequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\interfaces\\itransfertypequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\mappers\\imappers\\itransfertypemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\mappers\\imappers\\itransfertypemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\interfaces\\iaccounthttpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iaccounthttpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\exceptions\\accounterrorexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\exceptions\\accounterrorexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FF37FFB-384B-4DAF-B11C-830BCCC4C19E}|Domain\\Domain.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\domain\\models\\transfertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FF37FFB-384B-4DAF-B11C-830BCCC4C19E}|Domain\\Domain.csproj|solutionrelative:domain\\models\\transfertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\transfer.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AD6BC94F-3505-4F7B-A937-37170461B916}|Transfer.API\\Transfer.API.csproj|solutionrelative:transfer.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|c:\\users\\pc\\documents\\github\\transferrepo\\application\\request\\accountbalancerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA553AA9-3D1C-4A26-80EF-8E72EA48A208}|Application\\Application.csproj|solutionrelative:application\\request\\accountbalancerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,75 +122,350 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountBalanceRequest.cs",
-              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\Request\\AccountBalanceRequest.cs",
-              "RelativeDocumentMoniker": "Application\\Request\\AccountBalanceRequest.cs",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\Request\\AccountBalanceRequest.cs",
-              "RelativeToolTip": "Application\\Request\\AccountBalanceRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
+              "DocumentIndex": 6,
+              "Title": "TransferServices.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\UseCases\\TransferServices.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\TransferServices.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\UseCases\\TransferServices.cs",
+              "RelativeToolTip": "Application\\UseCases\\TransferServices.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAArwHUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T18:03:12.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1ce3aef-c78d-49ee-b72b-ec1fbc908313}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IAccountHttpService.cs",
-              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\Interfaces\\IAccountHttpService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\IAccountHttpService.cs",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\Interfaces\\IAccountHttpService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\IAccountHttpService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T18:00:19.378Z",
+              "WhenOpened": "2024-10-21T17:22:11.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "TransferController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Transfer.API\\Controllers\\TransferController.cs",
+              "RelativeDocumentMoniker": "Transfer.API\\Controllers\\TransferController.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Transfer.API\\Controllers\\TransferController.cs",
+              "RelativeToolTip": "Transfer.API\\Controllers\\TransferController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAjwCoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T01:21:20.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AccountHttpClientService.cs",
-              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\UseCases\\AccountHttpClientService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\UseCases\\AccountHttpClientService.cs",
               "RelativeDocumentMoniker": "Application\\UseCases\\AccountHttpClientService.cs",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\UseCases\\AccountHttpClientService.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\UseCases\\AccountHttpClientService.cs",
               "RelativeToolTip": "Application\\UseCases\\AccountHttpClientService.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAgwEAAAAANAAAA",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wCkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T17:57:56.953Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TransferServices.cs",
-              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\UseCases\\TransferServices.cs",
-              "RelativeDocumentMoniker": "Application\\UseCases\\TransferServices.cs",
-              "ToolTip": "C:\\Users\\gonza\\Desktop\\PS- Proyecto\\SRC\\VirtualWallet-preview\\TransferRepo\\Application\\UseCases\\TransferServices.cs",
-              "RelativeToolTip": "Application\\UseCases\\TransferServices.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwC0AAABWAAAA",
+              "DocumentIndex": 3,
+              "Title": "TransferMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Mappers\\TransferMapper.cs",
+              "RelativeDocumentMoniker": "Application\\Mappers\\TransferMapper.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Mappers\\TransferMapper.cs",
+              "RelativeToolTip": "Application\\Mappers\\TransferMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAArwA8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T17:22:11.333Z",
+              "WhenOpened": "2024-11-03T20:39:02.63Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransferStatusMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Mappers\\TransferStatusMapper.cs",
+              "RelativeDocumentMoniker": "Application\\Mappers\\TransferStatusMapper.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Mappers\\TransferStatusMapper.cs",
+              "RelativeToolTip": "Application\\Mappers\\TransferStatusMapper.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswBAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T21:02:13.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransferTypeMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Mappers\\TransferTypeMapper.cs",
+              "RelativeDocumentMoniker": "Application\\Mappers\\TransferTypeMapper.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Mappers\\TransferTypeMapper.cs",
+              "RelativeToolTip": "Application\\Mappers\\TransferTypeMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T20:38:53.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TransferCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Infrastructure\\Command\\TransferCommand.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Command\\TransferCommand.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Infrastructure\\Command\\TransferCommand.cs",
+              "RelativeToolTip": "Infrastructure\\Command\\TransferCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T03:58:26.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ITransferCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Interfaces\\ITransferCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\ITransferCommand.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Interfaces\\ITransferCommand.cs",
+              "RelativeToolTip": "Application\\Interfaces\\ITransferCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T03:56:51.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TransferTypeResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Response\\TransferTypeResponse.cs",
+              "RelativeDocumentMoniker": "Application\\Response\\TransferTypeResponse.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Response\\TransferTypeResponse.cs",
+              "RelativeToolTip": "Application\\Response\\TransferTypeResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T22:33:46.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TransferTypeController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Transfer.API\\Controllers\\TransferTypeController.cs",
+              "RelativeDocumentMoniker": "Transfer.API\\Controllers\\TransferTypeController.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Transfer.API\\Controllers\\TransferTypeController.cs",
+              "RelativeToolTip": "Transfer.API\\Controllers\\TransferTypeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T23:13:03.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TransferStatusQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Infrastructure\\Query\\TransferStatusQuery.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Query\\TransferStatusQuery.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Infrastructure\\Query\\TransferStatusQuery.cs",
+              "RelativeToolTip": "Infrastructure\\Query\\TransferStatusQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T21:09:16.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TransferQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Infrastructure\\Query\\TransferQuery.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Query\\TransferQuery.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Infrastructure\\Query\\TransferQuery.cs",
+              "RelativeToolTip": "Infrastructure\\Query\\TransferQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T22:36:49.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TransferStatusController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Transfer.API\\Controllers\\TransferStatusController.cs",
+              "RelativeDocumentMoniker": "Transfer.API\\Controllers\\TransferStatusController.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Transfer.API\\Controllers\\TransferStatusController.cs",
+              "RelativeToolTip": "Transfer.API\\Controllers\\TransferStatusController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T01:21:03.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TransferTypeQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Infrastructure\\Query\\TransferTypeQuery.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Query\\TransferTypeQuery.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Infrastructure\\Query\\TransferTypeQuery.cs",
+              "RelativeToolTip": "Infrastructure\\Query\\TransferTypeQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T22:32:07.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TransferTypeServices.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\UseCases\\TransferTypeServices.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\TransferTypeServices.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\UseCases\\TransferTypeServices.cs",
+              "RelativeToolTip": "Application\\UseCases\\TransferTypeServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T23:13:44.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TransferStatusServices.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\UseCases\\TransferStatusServices.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\TransferStatusServices.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\UseCases\\TransferStatusServices.cs",
+              "RelativeToolTip": "Application\\UseCases\\TransferStatusServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T20:59:00.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Transfer.API\\Program.cs",
+              "RelativeDocumentMoniker": "Transfer.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Transfer.API\\Program.cs",
+              "RelativeToolTip": "Transfer.API\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAArwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T02:58:06.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ITransferStatusMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Mappers\\IMappers\\ITransferStatusMapper.cs",
+              "RelativeDocumentMoniker": "Application\\Mappers\\IMappers\\ITransferStatusMapper.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Mappers\\IMappers\\ITransferStatusMapper.cs",
+              "RelativeToolTip": "Application\\Mappers\\IMappers\\ITransferStatusMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T21:01:18.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ITransferStatusQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Interfaces\\ITransferStatusQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\ITransferStatusQuery.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Interfaces\\ITransferStatusQuery.cs",
+              "RelativeToolTip": "Application\\Interfaces\\ITransferStatusQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T21:05:34.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ITransferTypeServices.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Interfaces\\ITransferTypeServices.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\ITransferTypeServices.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Interfaces\\ITransferTypeServices.cs",
+              "RelativeToolTip": "Application\\Interfaces\\ITransferTypeServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T23:14:01.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ITransferStatusServices.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Interfaces\\ITransferStatusServices.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\ITransferStatusServices.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Interfaces\\ITransferStatusServices.cs",
+              "RelativeToolTip": "Application\\Interfaces\\ITransferStatusServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T21:06:08.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ITransferTypeQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Interfaces\\ITransferTypeQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\ITransferTypeQuery.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Interfaces\\ITransferTypeQuery.cs",
+              "RelativeToolTip": "Application\\Interfaces\\ITransferTypeQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T22:33:04.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ITransferTypeMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Mappers\\IMappers\\ITransferTypeMapper.cs",
+              "RelativeDocumentMoniker": "Application\\Mappers\\IMappers\\ITransferTypeMapper.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Mappers\\IMappers\\ITransferTypeMapper.cs",
+              "RelativeToolTip": "Application\\Mappers\\IMappers\\ITransferTypeMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T20:38:06.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IAccountHttpService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Interfaces\\IAccountHttpService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IAccountHttpService.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Interfaces\\IAccountHttpService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IAccountHttpService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T18:00:19.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AccountErrorException.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Exceptions\\AccountErrorException.cs",
+              "RelativeDocumentMoniker": "Application\\Exceptions\\AccountErrorException.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Exceptions\\AccountErrorException.cs",
+              "RelativeToolTip": "Application\\Exceptions\\AccountErrorException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T17:03:22.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TransferType.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Domain\\Models\\TransferType.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\TransferType.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Domain\\Models\\TransferType.cs",
+              "RelativeToolTip": "Domain\\Models\\TransferType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T22:31:27.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Transfer.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Transfer.API\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Transfer.API\\appsettings.Development.json",
+              "RelativeToolTip": "Transfer.API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAACgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-28T20:47:18.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AccountBalanceRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Request\\AccountBalanceRequest.cs",
+              "RelativeDocumentMoniker": "Application\\Request\\AccountBalanceRequest.cs",
+              "ToolTip": "C:\\Users\\Pc\\Documents\\GitHub\\TransferRepo\\Application\\Request\\AccountBalanceRequest.cs",
+              "RelativeToolTip": "Application\\Request\\AccountBalanceRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T18:03:12.051Z"
             }
           ]
         }

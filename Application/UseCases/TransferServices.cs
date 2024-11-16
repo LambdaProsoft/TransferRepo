@@ -28,7 +28,10 @@ namespace Application.UseCases
             var accountSrc = await _accountHttpService.GetAccountById(request.SrcAccountId)
             ?? throw new Conflict("Source account not found");
 
-            var accountDest = await _accountHttpService.GetAccountById(request.DestAccountId)
+            //var accountDest = await _accountHttpService.GetAccountById(request.DestAccountId)
+            //?? throw new Conflict("Destine account not found");
+
+            var accountDest = await _accountHttpService.GetAccountByAliasOrCBU(request.DestAccountAliasOrCBU)
             ?? throw new Conflict("Destine account not found");
 
             var accountTransfers = await _query.GetTransferByFilter(accountSrc.AccountId, null, null, null, 1);
@@ -45,7 +48,8 @@ namespace Application.UseCases
                 Description = request.Description,
                 TypeId = request.TypeId,
                 SrcAccountId = request.SrcAccountId,
-                DestAccountId = request.DestAccountId,
+                DestAccountId = accountDest.AccountId,
+                DestAccountAliasOrCBU = accountDest.Alias,
             };
 
             if (accountDest.EstadoDeLaCuenta == "Active" && accountSrc.EstadoDeLaCuenta == "Active")
@@ -132,10 +136,16 @@ namespace Application.UseCases
             return await _mapper.GetTransfers(userTransfers);
         }
 
-        public async Task<List<TransferResponse>> GetAllByAccount(Guid accountId)
+        public async Task<List<TransferResponse>> GetAllByAccount(Guid accountId, int? offset, int? size)
         {
-            var transfers = await _query.GetTransfersByAccount(accountId)
+            var transfers = await _query.GetTransfersByAccount(accountId, offset, size)
                 ?? throw new Conflict("Account not found");
+            foreach (var transfer in transfers)
+            {
+                if (transfer.SrcAccountId == accountId) { 
+                    transfer.Amount = transfer.Amount * (-1);
+                }
+            }          
             return await _mapper.GetTransfers(transfers);
         }
     }

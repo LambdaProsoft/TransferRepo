@@ -22,10 +22,20 @@ namespace Application.UseCases
             _httpClient = httpClient; 
         }
 
-        //OBSOLETO
         public async Task<AccountResponse> GetAccountById(Guid id)
         {
             var response = await _httpClient.GetAsync($"https://localhost:7214/api/Account/{id}");
+            if (response.IsSuccessStatusCode)
+            {
+                var respo = response;
+
+                return await response.Content.ReadFromJsonAsync<AccountResponse>();
+            }
+            return null; // Manejar errores de forma apropiada
+        }
+        public async Task<AccountResponse> GetAccountByAliasOrCBU(string searchParam)
+        {
+            var response = await _httpClient.GetAsync($"https://localhost:7214/api/Account/{searchParam}/Alias");
             if (response.IsSuccessStatusCode)
             {
                 var respo = response;

@@ -8,6 +8,6 @@ namespace Application.Interfaces
         Task<Transfer> GetTransferById(Guid id);
         Task<List<Transfer>> GetAll();
         Task<List<Transfer>> GetTransferByFilter(Guid? UserId, decimal? amount, DateTime? date, int? type, int? status);
-        Task<List<Transfer>> GetTransfersByAccount(Guid accountId);
+        Task<List<Transfer>> GetTransfersByAccount(Guid accountId, int? offset, int? size);
     }
 }

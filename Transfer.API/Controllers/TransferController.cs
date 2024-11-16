@@ -53,11 +53,11 @@ namespace Transfer.API.Controllers
         [HttpGet("{id}/Accounts")]
         [ProducesResponseType(typeof(List<TransferResponse>), 200)]
         [ProducesResponseType(typeof(ApiError), 404)]
-        public async Task<IActionResult>GetAllTransfersBySrcAccountId(Guid id)
+        public async Task<IActionResult>GetAllTransfersBySrcAccountId(Guid id, int? offset, int? size)
         {
             try
             {
-                var result = await _services.GetAllByAccount(id);
+                var result = await _services.GetAllByAccount(id, offset, size);
                 return new JsonResult(result) { StatusCode= 200};
             }
             catch (Conflict ex)

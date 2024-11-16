@@ -2,6 +2,7 @@
 using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.Persistence;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace Infrastructure.Query
 {
@@ -70,12 +71,23 @@ namespace Infrastructure.Query
                 .Where(t => t.SrcAccountId == UserId).ToListAsync();
         }
 
-        public async Task<List<Transfer>> GetTransfersByAccount(Guid accountId)
+        public async Task<List<Transfer>> GetTransfersByAccount(Guid accountId, int? offset, int? size)
         {
-            return await _context.Transfers
+            var transfers =  _context.Transfers
                 .Include(t => t.TransferType)
                 .Include(t => t.Status)
-                .Where(t => t.SrcAccountId == accountId).ToListAsync();
+                .Where(t => t.SrcAccountId == accountId || t.DestAccountId == accountId)
+                .OrderByDescending(t => t.Date)
+                //.Skip((offset - 1) * size)
+                //.Take(size)
+                .AsQueryable();
+
+            if (offset.HasValue && size.HasValue)
+            {
+                transfers = transfers.Skip((offset.Value - 1) * size.Value).Take(size.Value);
+            }
+
+            return await transfers.ToListAsync();
         }
     }
 }

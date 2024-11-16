@@ -16,6 +16,7 @@
 
         public required Guid SrcAccountId { get; set; }
         public required Guid DestAccountId { get; set; }
+        public required string DestAccountAliasOrCBU { get; set; }
         public bool IsDeleted { get; set; }=false;
 
     }

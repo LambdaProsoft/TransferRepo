@@ -22,7 +22,7 @@ namespace Application.Mappers
                 Description = transfer.Description,
                 TypeId = transfer.TypeId,
                 SrcAccountId = transfer.SrcAccountId,
-                DestAccountId = transfer.DestAccountId,
+                DestAccountAliasOrCBU = transfer.DestAccountAliasOrCBU,
             };
             return response;
         }
@@ -41,7 +41,7 @@ namespace Application.Mappers
                     Description = transfer.Description,
                     TypeId = transfer.TypeId,
                     SrcAccountId = transfer.SrcAccountId,
-                    DestAccountId = transfer.DestAccountId,
+                    DestAccountAliasOrCBU = transfer.DestAccountAliasOrCBU,
                 };
                 responses.Add(response);
             }

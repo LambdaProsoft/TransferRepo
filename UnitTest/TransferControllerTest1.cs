@@ -62,11 +62,11 @@ namespace UnitTest
             var result = await _transferController.GetTransferById(transferId) as JsonResult;
 
             // Assert
-            result.Should().NotBeNull(); // Asegúrate de que no sea nulo
-            result!.StatusCode.Should().Be(404); // Código de estado 404
-            result.Value.Should().BeOfType<ApiError>(); // Valida el tipo del valor
+            result.Should().NotBeNull(); 
+            result!.StatusCode.Should().Be(404); 
+            result.Value.Should().BeOfType<ApiError>();
             var errorResponse = result.Value as ApiError;
-            errorResponse.Message.Should().Be("There's no transfer with that Id"); // Valida el mensaje de error
+            errorResponse.Message.Should().Be("There's no transfer with that Id"); 
         }
 
         [Fact]

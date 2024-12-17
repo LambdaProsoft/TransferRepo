@@ -54,7 +54,7 @@ namespace Application.UseCases
 
             if (accountDest.EstadoDeLaCuenta == "Active" && accountSrc.EstadoDeLaCuenta == "Active")
             {
-                    if (accountDest.Balance < transfer.Amount) {
+                    if (accountSrc.Balance < transfer.Amount) {
                         transfer.StatusId = 3;
                         await _command.UpdateTransfer(transfer);
                         throw new AccountErrorException("Not enough money to make the transaction");
